@@ -447,7 +447,7 @@ while any(strcmp({DIR.name},[fname(1:end-3) num2str(i,'%03u')])) || any(strcmp({
     if deletecsvs; delete([fileloccsv file '.csv']); end
     simple = false;
     
-end
+%end
 try if strcmp(fileloc(end-3:end-1),'raw'); newfileloc = fileloc(1:end-4); else newfileloc = fileloc; end; catch; newfileloc = fileloc; end
 lastwarn('');
 if regexp(file(end-7:end-4),'_\d\d\d')
