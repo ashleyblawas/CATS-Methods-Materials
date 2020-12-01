@@ -38,7 +38,7 @@ disp('Section completed')
 % you want to read in a TAG GUIDE for tag on and tag off times.
 
 dur = 15; % break the video up into chunks of length dur seconds to ensure progress and avoid crashes.  Smaller numbers use less memory
-folder = 'E:\CATS\tag_data_raw\'; % optional- just gives you a place to start looking for your data files
+folder = 'C:\Users\ashle\Dropbox\Ashley\Graduate\Toolboxes\CATS\CATSworkshop2020\CATSworkshop2020\ExampleData\CATS\tag_data_raw'; % optional- just gives you a place to start looking for your data files
 readaudiofiles = true;
 
 % these will be less commonly adjusted
@@ -50,6 +50,7 @@ whaleID = [];
 
 makeMovieTimes(dur,readtimestamps,simpleread,folder,readaudiofiles,timewarn,whaleID,redovids); %workhorse script
 disp('Section 1 completed');
+
 %% 2. Select files (START HERE IF NO VIDEOS) 
 % Always run this section
 % 
