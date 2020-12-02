@@ -77,7 +77,7 @@ decfac = 5; %decimation factor (e.g. decimate 50 Hz data in "data" to 10 Hz data
 
 % Can set "drive" and "folder" below to start looking for files in a specific place on your computer
 
-folder = 'e:/CATS/tag_data_raw/'; % folder in the drive where the cal files are located (and where you want to look for files) %'Users\Dave\Documents\Programs\MATLAB\Tagging\CATS cal';%
+folder = 'C:\Users\ashle\Dropbox\Ashley\Graduate\Toolboxes\CATS\CATSworkshop2020\CATSworkshop2020\ExampleData\CATS\Calibrations'; % folder in the drive where the cal files are located (and where you want to look for files) %'Users\Dave\Documents\Programs\MATLAB\Tagging\CATS cal';%
 global fileloc filename
 cf = pwd; try cd([vol ':\' folder]); catch; end
 [filename,fileloc]=uigetfile('*.mat', 'select CATS data (imported mat file)'); 
